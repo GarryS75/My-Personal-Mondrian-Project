@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyPietMondrian</title>
+        <style>
+
+        @media (orientation: landscape) {
+        body {
+            flex-direction: row;
+        }
+        }
+
+        @media (orientation: portrait) {
+        body {
+            flex-direction: column;
+        }
+        }
+
+            body {
+                display: flex ;  
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .container {
+                display: grid;
+                height: 1630px;
+                width: 1240px;
+                background-color: #000;
+                border: 15px black solid;
+                box-shadow: 15px 15px 15px #B2B2B2;
+                gap: 9px;
+                grid-template-columns: repeat(10, 116px);
+                grid-template-rows: 120px 55px 140px repeat(2, 100px) repeat(2, 120px) repeat(2, 120px) repeat(2, 100px) 145px 55px 120px;
+            }
+
+            .white1 {
+                background-color: white;
+                grid-row: span 3;
+            }
+            .yellow1 {
+                background-color: yellow;
+                grid-column: span 3;
+            }
+            .white2 {
+                background-color: white;
+                grid-column: span 3;
+            }
+            .white3 {
+                background-color: white;
+                grid-column: span 2;
+            }
+            .white4 {
+                background-color: white;
+                grid-row: span 2;
+            }
+            .white5 {
+                background-color: white;
+                grid-area: 2 / 2 /4 /4;
+            }
+            .black1 {
+                background-color: black;
+                grid-area: 2 / 4 / span 2 / span 2;
+            }
+            .red1 {
+                background-color: red;
+                grid-area: 2 / 6 / 6 / span 4;
+            }
+            .white6 {
+                background-color: white;
+                grid-row: span 3;
+            }
+            .yellow2 {
+                background-color: yellow;
+                grid-area: 4 /1/ 5 / 3;
+            }
+            .black2 {
+                background-color: black;
+                grid-area: 4 / 3/ 6 / 4;
+            }
+            .white7 {
+                background-color: white;
+                grid-area: 4 / 4 / 6 / 5;
+            }
+            .white8 {
+                background-color: white;
+                grid-row: span 2;
+            }
+            .white9 {
+                background-color: white;
+                grid-area: 5 / 1 / 6 / span 2;
+            }
+            .red2 {
+                background-color: red;
+                grid-area: 6 / 1 / span 2 / span 2;
+            }
+            .blue1 {
+                background-color: blue;
+                grid-area: 6 / 3 / span 2 / span 2;
+            }
+            .white10 {
+                background-color: white;
+                grid-row: span 2;
+            }
+            .white11 {
+                background-color: white;
+                grid-column: span 2;
+            }
+            .yellow3 {
+                background-color: yellow;
+                grid-row: span 2 ;
+                grid-column: span 2;
+            }
+            .yellow4 {
+                background-color: yellow;
+                grid-row: span 2;
+            }
+            .white12 {
+                background-color: white;
+                grid-area: 7 / 6 / 8 / span 2;
+            }
+            .yellow5 {
+                background-color: yellow;
+                grid-area: 8 / 1 / span 2;
+            }
+            .yellow6 {
+                background-color: yellow;
+                grid-area: 8 / 2 /span 2 / span 2;
+            }
+            .white13 {
+                background-color: white;
+                grid-column: span 2;
+            }
+            .white14 {
+                background-color: white;
+                grid-row: span 2;
+            }
+            .red3 {
+                background-color: red;
+                grid-area: span 2 / span 2;
+            }
+            .blue2 {
+                background-color: blue;
+                grid-area: span 2 / span 2;
+            }
+            .white15 {
+                background-color: white;
+                grid-column: span 2;
+            }
+            .white16 {
+                background-color: white;
+                grid-row: span 3;
+            }
+            .blue3 {
+                background-color: blue;
+                grid-area: 10 / 2 / span 4 / span 4;
+            }
+            
+            .white17 {
+                background-color: white;
+                grid-row: span 2;
+            }
+            .white18 {
+                background-color: white;
+                grid-row: span 2;
+            }
+            .black3{
+                background-color: black;
+                grid-row: span 2;
+            }
+            .yellow7 {
+                background-color: yellow;
+                grid-area: 10 / 9 / span 2;
+            }
+            .yellow8 {
+                background-color: yellow;
+                grid-area: 10 / 10 / 11 / 10;
+            }
+            .black4 {
+                background-color: black;
+            }
+            .white19 {
+                background-color: white;
+                grid-row: span 2;
+            }
+            .black5 {
+                background-color: black;
+                grid-area: 12 / 6 / span 2 / span 2;
+            }
+            .white20 {
+                background-color: white;
+                grid-area: 12 / 8 / span 2 / span 2;
+            }
+            .white21 {
+                background-color: white;
+                grid-area: 12 / 10 /span 3;
+            }
+            .white22 {
+                background-color: white;
+                grid-column: span 2;
+            }
+            .white23 {
+                background-color: white;
+                grid-column: span 3;
+            }
+            .yellow9 {
+                background-color: yellow;
+                grid-area: 14 / 7 / 14 / span 3;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="white1"></div>
+        <div class="yellow1"></div>
+        <div class="white2"></div>
+        <div class="white3"></div>
+        <div class="white4"></div>
+        <div class="white5"></div>
+        <div class="black1"></div>
+        <div class="red1"></div>
+        <div class="white6"></div>
+        <div class="yellow2"></div>
+        <div class="black2"></div>
+        <div class="white7"></div>
+        <div class="white8"></div>
+        <div class="white9"></div>
+        <div class="red2"></div>
+        <div class="blue1"></div>
+        <div class="white10"></div>
+        <div class="white11"></div>
+        <div class="yellow3"></div>
+        <div class="yellow4"></div>
+        <div class="white12"></div>
+        <div class="yellow5"></div>
+        <div class="yellow6"></div>
+        <div class="white13"></div>
+        <div class="white14"></div>
+        <div class="red3"></div>
+        <div class="blue2"></div>
+        <div class="white15"></div>
+        <div class="white16"></div>
+        <div class="blue3"></div>
+        <div class="white17"></div>
+        <div class="white18"></div>
+        <div class="black3"></div>    
+        <div class="yellow7"></div>
+        <div class="yellow8"></div>
+        <div class="black4"></div>
+        <div class="white19"></div>
+        <div class="black5"></div>
+        <div class="white20"></div>
+        <div class="white21"></div>
+        <div class="white22"></div>
+        <div class="white23"></div>
+        <div class="yellow9"></div>
+
+
+
+      </div>
+
+      </div>
+    </body>
+</html>
