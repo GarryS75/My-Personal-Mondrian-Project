@@ -7,15 +7,22 @@
         <style>
 
         @media (orientation: landscape) {
-        body {
+        .container {
             flex-direction: row;
         }
         }
 
         @media (orientation: portrait) {
-        body {
+        .container {
             flex-direction: column;
         }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                height: 198px;
+                width: 54px;
+            }
         }
 
             body {
